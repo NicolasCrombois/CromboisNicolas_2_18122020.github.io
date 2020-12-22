@@ -1,0 +1,257 @@
+@font-face{
+  font-family: Raleway-Regular;
+  src: url(../fonts/Raleway-Regular.ttf);
+}@font-face{
+  font-family: Raleway-Semibold;
+  src: url(../fonts/Raleway-SemiBold.ttf);
+}@font-face{
+  font-family: Raleway-Bold;
+  src: url(../fonts/Raleway-Bold.ttf);
+}
+
+body
+{
+	margin: 0 3.5em;
+}
+nav ul{
+	padding: 0px;
+	margin: 0px;
+	height: 100%;
+}
+nav ul li {
+	list-style-type: none;
+	display: inline-block;
+	margin: 0 3em 0em 3em;
+	height: 100%;
+	border-top: 2px solid #FFF;
+	padding:  45px 25px 0 25px;
+}
+nav a {
+	margin-top:3px;
+	font-family: Raleway-Semibold;
+	text-decoration: none;
+	color: #000;
+	text-align: center;
+	font-size: 18px;
+}
+nav li:hover {
+	border-top: 2px solid #0065FC;
+}
+nav li:hover a{
+	color: #0065FC;
+}
+nav li:active {
+	border-top: 2px solid #0065FC;
+}
+nav li:active a{
+	color: #0065FC;
+}
+.nav-bar{
+	float: left;
+}
+.nav-bar img{
+	margin-top: 1.8em;
+	width: 130%;
+}
+nav{
+	float: right;
+	height: 100%;
+}
+header{
+	height: 120px;
+}
+.bold{
+	font-family: Raleway-Bold;
+}
+.blue{
+	color: #0065FC;
+}
+h2{
+	font-family: Raleway-Bold;
+	margin-bottom: 0.4em;
+}
+p{
+	font-family: Raleway-Regular;
+	margin-top: 0.4em;
+}
+.fas{
+	color: #0065FC;
+}
+#search_bar{
+	display: flex;
+
+}
+#search_bar div{
+	border-radius: 12px 0 0 12px;
+	background-color: #F2F2F2;
+	width: 45px;
+	height: 45px;
+	display: flex;
+}
+#search_bar div i.fas{
+	color: #000;
+	margin: auto;
+}
+#search_bar input[type=text]{
+	border-radius: 0;
+	border: solid 1px #F2F2F2;
+	font-family: Raleway-Bold;
+	padding-left: 13px;
+	width: 250px;
+	font-size: 16px;
+}
+
+#search_bar input[type=submit]{
+	color: #FFF;
+	border-radius: 0 15px 15px 0;
+	background-color: #0065FC;
+	border: solid 1px #0065FC;
+	font-family: Raleway-Semibold;
+	font-size: 16px;
+	padding: 0px 15px 0 15px ;
+}
+#filters {
+	display: flex;
+	margin-top: 25px;
+}
+#filters p {
+	font-family: Raleway-Semibold;
+	margin-right: 15px;
+}
+.filter{
+	display: flex;
+	border: 2px solid #F2F2F2;
+	border-left: 0px;
+	border-radius: 50px;
+	height: 35px;
+	margin-right: 8px;
+	margin-left: 8px;
+}
+.filter div{
+	border-radius: 50px;
+	background-color: #F2F2F2;
+	width: 35px;
+	height: 35px;
+	display: flex;
+	margin-right: 15px;
+}
+.filter div i.fas{
+	margin: auto;
+}
+.filter p {
+	margin: 0;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#information_about_city{
+	display: flex;
+	margin-top: 30px;
+	margin-bottom: 18px;
+}
+#information_about_city div{ 
+	display: flex;
+	border: 1px solid #F2F2F2;
+	border-radius: 25px;
+	height: 27px;
+	width: 27px;
+}
+#information_about_city div i{
+	margin: auto;
+}
+#information_about_city p{
+	margin-left: 15px;
+}
+
+#hosting, #most-popular{
+	background-color: #F2F2F2;
+	border-radius: 25px;
+	padding: 2.5%;
+}
+#hosting_and_popular{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+#hosting{
+	width: 55%;
+	margin-right: 2%;
+}
+#most-popular{
+	width: 33%;
+}
+#hosting h2,#most-popular h2{
+	margin-top: 5px;
+	margin-bottom: 25px;
+}
+#hosting #list, #most-popular #list{
+	display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+#hosting .unit, #most-popular .unit{
+	min-width: 210px;
+	margin: auto;
+	margin-bottom: 25px;
+	background-color: #FFF;
+	border: #F2F2F2;
+	border-radius: 32px;
+	box-shadow: 0px 1px 18px #C3C3C3;
+}
+#hosting .unit{
+	width: 30%;
+
+}
+#most-popular .unit{
+	width: 100%;
+}
+#hosting .unit img, #most-popular .unit img{
+	object-fit: cover;
+}
+#hosting .unit img{
+	margin: 1.5%;
+	width: 97%;
+	height: 145px;
+	border-radius: 25px 25px 0 0;
+
+}#most-popular .unit img{
+	margin: 1%;
+	float: left;
+	width: 35%;
+	height: 167px;
+	border-radius: 25px 0 0 25px;
+
+}
+#hosting .description{
+	margin-left: 20px;
+	padding-bottom: 12px;
+}
+#most-popular .description{
+	margin-left: 240px;
+	margin-top: 25px;
+	padding-bottom: 12px;
+}
+
+#hosting h3, #most-popular h3{
+	font-family: Raleway-Bold;
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+#hosting p#more_option{
+	font-family: Raleway-Bold;
+	margin-top: 20px;
+	font-weight: 1px;
+	font-size: 20px;
+	margin-bottom: 0px;
+}
+#hosting .unit p{
+	margin-bottom: 5px;
+}
+#most-popular .unit p{
+	margin-bottom: 15px;
+}
+.false{
+	color: #F2F2F2;
+}
+#most-popular #rate{
+	margin-top: 75px;
