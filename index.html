@@ -18,7 +18,7 @@
 <body>
 	<header>
 		<!-- Add the nav-bar with the reservia logo and the three anchors -->
-		<div class="nav-bar">
+		<div>
 			<img src="images/logo/Reservia.svg" alt="Logo de Reservia"/>
 		</div>
 		<nav>
@@ -42,34 +42,36 @@
 				<i class="fas fa-map-marker-alt"></i>
 			</div>
 			<input type="text" name="city" placeholder="Marseille, France">
-			<input type="submit" name="research_button" value="Rechercher">
+			<button><p id="search_letter">Rechercher</p><i class="fas fa-search" id="search_icon"></i></button>
 		</div>
 		<!-- The division filters with the icon and the title of each filter -->
-		<div id="filters">
+		<div id="section_filter">
 			<p>Filtres</p>
-			<div class="filter">
-				<div>
-					<i class="fas fa-money-bill-wave"></i>
+			<div id="filters">
+				<div class="filter">
+					<div>
+						<i class="fas fa-money-bill-wave"></i>
+					</div>
+					<p>Économique</p>
 				</div>
-				<p>Économique</p>
-			</div>
-			<div class="filter">
-				<div>
-					<i class="fas fa-child"></i>
+				<div class="filter">
+					<div>
+						<i class="fas fa-child"></i>
+					</div>
+					<p>Familial</p>
 				</div>
-				<p>Familial</p>
-			</div>
-			<div class="filter">
-				<div>
-					<i class="fas fa-heart"></i>
+				<div class="filter">
+					<div>
+						<i class="fas fa-heart"></i>
+					</div>
+					<p>Romantique</p>
 				</div>
-				<p>Romantique</p>
-			</div>
-			<div class="filter">
-				<div>
-					<i class="fas fa-dog"></i>
+				<div class="filter">
+					<div>
+						<i class="fas fa-dog"></i>
+					</div>
+					<p>Animaux autorisés</p>
 				</div>
-				<p>Animaux autorisés</p>
 			</div>
 		</div>
 		<div id="information_about_city">
