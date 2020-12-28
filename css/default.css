@@ -221,7 +221,7 @@ p{
 	border-radius: 25px;
 	padding: 2.5%;
 }
-#hosting_and_popular{
+#all_categoies{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
@@ -421,6 +421,7 @@ footer li{
 @media all and (max-device-width: 425px) {
 	header{
 		margin: 0;
+		width: 115%;
 	}
 	header img{
 		width: 185%;
@@ -433,7 +434,7 @@ footer li{
 	nav ul li:nth-child(3){
 		position: absolute;
 		top: 15px;
-		right: 30px;
+		right: -140px;
 		height: 70px;
 	}
 	nav ul li:nth-child(3):hover{
@@ -464,10 +465,13 @@ footer li{
 
 	}
 	h1{
-		font-size: 3.3em;
+		font-size: 3.5em;
 	}
 	p{
 		font-size: 1.88em;
+	}
+	#search_service{
+		width: 100%;
 	}
 	#search_bar{
 		margin-top: 70px;
@@ -515,7 +519,7 @@ footer li{
 	.filter {
 		border: 3px solid #D4D4D4;
 		height: 102px;
-		margin-bottom: 20px;
+		margin-bottom: 35px;
 		position: relative;
 	}
 	.filter div {
@@ -530,8 +534,8 @@ footer li{
 	}
 	.filter p {
 		position: relative;
-	    margin: 0 20px 0 115px ;
-	    font-size: 2.5em;
+	    margin: 0 50px 0 130px;
+	    font-size: 2.7em;
 		transition: font-size 0.6s;
 	}
 	#filters {
@@ -563,6 +567,78 @@ footer li{
 	}#information_about_city div i.fas{
 	    font-size: 1.5em;
 	}#information_about_city p{
-	    font-size: 2.4em;
+	    font-size: 2.7em;
+	}
+	#all_categoies{
+		flex-direction: column;
+		margin: 0;
+	}
+	#most-popular{
+		order: 1;
+		border-radius: 0;
+	}
+	#most-popular, #hosting{
+		padding-left: 70px;
+		padding-right: 70px;
+		padding-bottom: 70px;
+		width: 100%;
+	}
+	#hosting{
+		order: 2;
+		width: 100%;
+		background-color: white;
+	}
+	#most-popular .unit{
+		height: 400px;
+	}
+	#most-popular .description{
+		padding-top: 35px;
+	}
+	#hosting h2, #most-popular h2, #activities h2 {
+		font-family: Raleway-Bold;
+	    margin-bottom: 5px;
+	    padding-right: 10px;
+	    font-size: 2.6em;
+	}
+	#hosting h1, #most-popular h1, #most-popular i.fa-chart-line {
+	    margin-top: 75px;
+	    margin-bottom: 65px;
+	}
+	#most-popular .unit img{
+		height: auto;
+		width: 45%;
+	}#most-popular i.fa-chart-line {
+	    font-size: 3.5rem;
+	}#most-popular .unit p,#hosting .unit p {
+	    font-size: 2.2em;
+	}
+	#activities{
+		order: 3;
+	}#most-popular .description, #hosting .description {
+	    padding-left: 30px;
+	}#most-popular .rate {
+	    bottom: 30px;
+	    left: 45px;
+	}#most-popular .rate i.fas,#hosting .rate i.fas{
+		font-size: 1.8em;
+	}
+	#hosting .list{
+		width: 100%;
+	}
+	#hosting .unit{
+		width: 100%;
+		height: 560px;
+		margin-bottom: 35px;
+	}
+	#hosting .unit img{
+		height: 58%;
+	}
+	#hosting .rate{
+		margin-top: 30px;
+	}
+	#hosting p#more_option {
+	    margin-top: 40px;
+	    font-size: 3.1em;
+	    margin-bottom: 0px;
 	}
 }
