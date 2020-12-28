@@ -339,7 +339,7 @@ p{
 	border-radius: 25px;
 }
 
-#activities div.unit {
+#activities .unit {
 	width: 80%;
 	background-color: white;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.08);
@@ -363,31 +363,33 @@ p{
 	left: 0;
 	bottom: 63px;
 }
-#activities div.unit:nth-child(1){
-	height: 100%;
-	width: 23%;
-}
-#activities div.unit:nth-child(2){
-	height: 58%;
-	width: 23%;
-}
-#activities div.unit:nth-child(3){
-	height: 38%;
-	width: 23%;
-}
-#activities div.unit:nth-child(4){
-	height: 100%;
-	width: 23%;
-}
-#activities div.unit:nth-child(5){
-	height: 48%;
-	width: 23%;
-}
-#activities div.unit:nth-child(6){
-	height: 48%;
-	width: 23%;
-}
 
+@media all and (min-device-width: 426px) {
+	#activities div.unit:nth-child(1){
+		height: 100%;
+		width: 23%;
+	}
+	#activities div.unit:nth-child(2){
+		height: 58%;
+		width: 23%;
+	}
+	#activities div.unit:nth-child(3){
+		height: 38%;
+		width: 23%;
+	}
+	#activities div.unit:nth-child(4){
+		height: 100%;
+		width: 23%;
+	}
+	#activities div.unit:nth-child(5){
+		height: 48%;
+		width: 23%;
+	}
+	#activities div.unit:nth-child(6){
+		height: 48%;
+		width: 23%;
+	}
+}
 footer{
 	padding-top: 20px;
 	padding-bottom: 30px;
@@ -577,7 +579,7 @@ footer li{
 		order: 1;
 		border-radius: 0;
 	}
-	#most-popular, #hosting{
+	#most-popular, #hosting, #activities{
 		padding-left: 70px;
 		padding-right: 70px;
 		padding-bottom: 70px;
@@ -600,7 +602,7 @@ footer li{
 	    padding-right: 10px;
 	    font-size: 2.6em;
 	}
-	#hosting h1, #most-popular h1, #most-popular i.fa-chart-line {
+	#hosting h1, #most-popular h1, #most-popular i.fa-chart-line, #activities h1{
 	    margin-top: 75px;
 	    margin-bottom: 65px;
 	}
@@ -625,10 +627,10 @@ footer li{
 	#hosting .list{
 		width: 100%;
 	}
-	#hosting .unit{
+	#hosting .unit, #activities .unit{
 		width: 100%;
 		height: 560px;
-		margin-bottom: 35px;
+		margin-bottom: 85px;
 	}
 	#hosting .unit img{
 		height: 58%;
@@ -640,5 +642,42 @@ footer li{
 	    margin-top: 40px;
 	    font-size: 3.1em;
 	    margin-bottom: 0px;
+	}
+	#activities div#list_activities{
+		flex-wrap: nowrap;
+		height: auto;
+	}
+	#activities div.unit h2{
+		padding: 45px 65px;
+		height: auto;
+		bottom: 145px;
+	    border-radius: 0 0 85px 85px;
+	    font-size: 2.8em;
+	}
+	#activities .unit{
+		box-shadow: 0 15px 25px 0 rgba(0, 0, 0, 0.15);
+		border-radius: 85px;
+	}#activities img {
+	    border-radius: 85px;
+	}
+	footer{
+		width: 115%;
+		margin-top: 0;
+		flex-wrap: nowrap;
+		flex-direction: column;
+		padding-left: 35px;
+		padding-top: 75px;
+	}
+	footer div{
+		width: auto;
+		padding-left: 55px;
+		margin-bottom: 55px;
+	}
+	footer h2{
+		font-size: 3.2em;
+	}
+	footer li{
+		font-size: 2.2em;
+		margin-bottom: 35px;
 	}
 }
