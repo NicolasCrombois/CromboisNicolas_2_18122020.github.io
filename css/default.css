@@ -303,7 +303,7 @@ p{
 	color: #0065FC;
 }
 #hosting h2, #most-popular h2, #activities h2{
-	font-family: Raleway-Bold;
+	font-family: Raleway-Semibold;
 	margin-bottom: 5px;
 	margin-top: 5px;
 	padding-right: 5px;
@@ -328,6 +328,9 @@ p{
 	position: absolute;
 	bottom: 10px;
 	left: 39%;
+}
+#most-popular .list .unit a {
+	width: 100%;
 }
 #activities{
 	width: 100%;
@@ -694,7 +697,7 @@ footer li{
 		border-radius: 0;
 		width: auto;
 	}#hosting h2, #most-popular h2, #activities h2 {
-	    font-size: 1.3em;
+	    font-size: 1.2em;
 	}#hosting .description p, #most-popular .description p, #activities .description p {
 	    font-size: 1em;
 	}#hosting .description,   #most-popular .description, #activities .description{
