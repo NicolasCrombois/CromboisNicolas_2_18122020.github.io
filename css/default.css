@@ -13,6 +13,7 @@
 }
 body
 {
+	font-size: 13px;
 	margin: 0;
 	background: white;
 }
@@ -24,14 +25,13 @@ nav ul{
 nav ul li {
 	list-style-type: none;
 	display: inline-block;
-	margin: 0 3em 0em 3em;
 	height: 100%;
 	border-top: 2px solid #FFF;
-	padding:  45px 25px 0 25px;
+	padding:  45px 45px 0 45px;
 }
 nav a {
 	margin-top:3px;
-	font-family: Raleway-Semibold;
+	font-family: Raleway-Regular;
 	text-decoration: none;
 	color: #000;
 	text-align: center;
@@ -307,7 +307,7 @@ p{
 	margin-bottom: 5px;
 	margin-top: 5px;
 	padding-right: 5px;
-	font-size: 1em;
+	font-size: 1.15em;
 }
 #hosting p#more_option{
 	font-family: Raleway-Bold;
@@ -392,7 +392,7 @@ footer div{
 footer h2{
 	display: block;
 	font-family: Raleway-Bold;
-	font-size: 1.2em;
+	font-size: 1.3em;
 }
 footer ul{
 	display: block;
@@ -402,10 +402,24 @@ footer ul{
 footer li{
 	font-family: Raleway-Regular;
 	margin-bottom: 12px;
-	font-size: 0.9em;
+	font-size: 14px;
 }
-
-@media all and (min-width: 426px) {
+@media all and (max-width: 1200px){
+	#most-popular {
+    	order: 1;
+	}
+	#hosting {
+    	order: 2;
+	}
+	#activities {
+    	order: 3;
+	}
+	#all_categories {
+	    display: flex;
+	    flex-direction: column;
+	}
+}
+@media all and (min-width: 621px){
 	#activities div.unit:nth-child(1){
 		height: 100%;
 		width: 22.5%;
@@ -432,47 +446,8 @@ footer li{
 	}
 }
 
-@media all and (max-width: 1200px) and (min-width: 426px){
-	header img{
-		width: 	160%;
-	}
-	nav ul li {
-	    margin: 0 0.5em;
-	}
-	#search_service{
-		position: relative;
-	}
-	#section_filter{
-		position: absolute;
-	    width: 40%;
-	    top: 28px;
-	    left: 60%;
-	}
-	#all_categories{
-		display: block;
-	}
-	#hosting .unit {
-	    width: 47%;
-	}
-	#hosting {
-    	width: auto;
-	}
-	#hosting, #most-popular {
-	    padding: 4.5%;
-	}
-	#most-popular {
-    	width: auto;
-    	margin-top: 55px;
-	}
-	#information_about_city{
-		margin-top: 100px;
-	}
-	.filter{
-		margin-bottom: 5px;
-	}
-	#activities h1{
-		margin-bottom: 25px;
-	}
+@media all and (max-width: 1200px) and (min-width: 621px){
+
 	#activities div.unit:nth-child(1){
 		height: 48%;
 		width: 48%;
@@ -500,6 +475,45 @@ footer li{
 	#activities div#list_activities {
 		height: 680px;
 	}
+}
+@media all and (max-width: 1200px) and (min-width: 426px){
+	header img{
+		width: 	160%;
+	}
+	nav ul li {
+	    margin: 0 0.5em;
+	}
+	#search_service{
+		position: relative;
+	}
+	#section_filter{
+		position: absolute;
+	    width: 40%;
+	    top: 28px;
+	    left: 60%;
+	}
+	#hosting .unit {
+	    width: 47%;
+	}
+	#hosting {
+    	width: auto;
+	}
+	#hosting, #most-popular {
+	    padding: 4.5%;
+	}
+	#most-popular {
+    	width: auto;
+    	margin-bottom: 55px;
+	}
+	#information_about_city{
+		margin-top: 100px;
+	}
+	.filter{
+		margin-bottom: 5px;
+	}
+	#activities h1{
+		margin-bottom: 25px;
+	}
 	footer{
 		flex-wrap: nowrap;
 		justify-content: space-between;
@@ -525,14 +539,14 @@ footer li{
 
 	footer{
 		width: auto;
-		margin-top: 55px;
+		margin-top: 0px;
 		flex-wrap: nowrap;
 		flex-direction: column;
 		padding-top: 35px;
+		margin-top: 50px;
 	}
 	footer div{
 		width: auto;
-		padding-left: 15px;
 		margin-bottom: 35px;
 	}
 	footer li{
@@ -567,25 +581,45 @@ footer li{
 		color: #DEEBFF;
 	}
 	nav ul li a{
-		font-family: Raleway-Semibold;
+		font-family: Raleway-Regular;
 	}
 	nav ul{
 		display: flex;
 		flex-wrap: wrap;
-		height: 40%;
+		height: 32%;
 	}
 	nav ul li:nth-child(1),nav ul li:nth-child(2){
 		width: 50%;
 		margin: 0;
 		padding: 0;
 		text-align: center;
-		border-bottom: 6px solid #F2F2F2;
+		border-bottom: 4px solid #F2F2F2;
+		border-top: 0;
 	}
 	nav ul li:nth-child(1):hover,nav ul li:nth-child(2):hover{
-		border-bottom: 6px solid #0065FC;
-		border-top: 0;
+		border-bottom: 4px solid #0065FC;
 
 	}
+}
+
+@media (max-width: 620px){
+	#activities div#list_activities{
+		flex-wrap: nowrap;
+		height: auto;
+		width: auto;
+	}#activities h1{
+		margin-top: 20px;
+	}
+	#activities .unit{
+		box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.15);
+		border-radius: 25px;
+		width: 100%;
+		height: 210px;
+		margin-bottom: 35px;
+	}#activities div.unit h2 {
+    	padding: 14px 20px 6px 20px;
+    	height: 35px;
+    }
 }
 @media all and (max-width: 573px) {
 	#hosting .unit{
@@ -673,18 +707,18 @@ footer li{
 		transition: font-size 0.6s;
 	}
 	.filter:hover div i.fas {
-		font-size: 1.2em;
+		font-size: 1.1em;
 		transition: font-size 0.6s;
 	}
 	.filter:hover div {
-		width: 60px;
-		height: 60px;
+		width: 58px;
+		height: 58px;
 		transition: width 0.6s, height 0.6s;
 	}
 	.filter:hover {
-		margin: 0 0 20px 15px;
-		height: 57px;
+		height: 55px;
 		transition: width 0.6s,  height 0.6s;
+		margin-left: 0;
 	}
 	#all_categories{
 		display: flex;
@@ -730,73 +764,8 @@ footer li{
 		font-family: Raleway-Semibold;
 	}#most-popular .unit .description p b, #most-popular .unit .description p b{
 		font-family: Raleway-Bold;
-	}
-	#activities div#list_activities{
-		flex-wrap: nowrap;
-		height: auto;
-		width: auto;
-	}#activities h1{
-		margin-top: 20px;
-	}
-	#activities .unit{
-		box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.15);
-		border-radius: 25px;
-		width: 100%;
-		height: 210px;
-		margin-bottom: 35px;
-	}#activities div.unit h2 {
-    	padding: 14px 20px 6px 20px;
-    	height: 35px;
-    }footer{
-    	padding-left: 35px;
+	}footer{
+    	padding-left: 5%;
+    	margin-top: 0px;
     }
-}
-@media (max-width: 653px) and (min-width: 426px){
-	#activities div.unit:nth-child(4) h2 {
-	    padding: 12px 20px 12px 20px;
-	    height: 45px;
-	    bottom: 75px;
-	}
-}
-@media (max-width: 604px) and (min-width: 426px){
-	#activities div.unit:nth-child(5) h2 {
-	    padding: 12px 20px 12px 20px;
-	    height: 45px;
-	    bottom: 75px;
-	}
-}
-@media (max-width: 486px) and (min-width: 426px){
-	#activities div.unit:nth-child(2) h2 {
-	    padding: 12px 20px 12px 20px;
-	    height: 45px;
-	    bottom: 75px;
-	}
-}
-@media (max-width: 465px) and (min-width: 426px){
-	#activities div.unit:nth-child(6) h2 {
-	    padding: 12px 20px 12px 20px;
-	    height: 45px;
-	    bottom: 75px;
-	}
-}
-@media (max-width: 357px){
-	#activities div.unit:nth-child(4) h2 {
-	    padding: 12px 20px 16px 20px;
-	    height: 45px;
-	    bottom: 79px;
-	}
-}
-@media (max-width: 324px){
-	#activities div.unit:nth-child(5) h2 {
-	    padding: 12px 20px 16px 20px;
-	    height: 45px;
-	    bottom: 79px;
-	}
-}
-@media (max-width: 229px){
-	#activities div.unit:nth-child(6) h2 {
-	    padding: 12px 20px 16px 20px;
-	    height: 45px;
-	    bottom: 79px;
-	}
 }
