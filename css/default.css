@@ -112,6 +112,7 @@ p{
 }
 
 #search_bar button{
+	cursor: pointer;
 	background-color: #0065FC;
 	border: 0px;
 	border-radius: 0 15px 15px 0;
@@ -257,7 +258,7 @@ p{
 	margin-bottom: 25px;
 	background-color: #FFF;
 	border: #F2F2F2;
-	border-radius: 27px;
+	border-radius: 24px;
 	box-shadow: 0px 1px 18px #C3C3C3;
 }
 #hosting .unit{
@@ -275,14 +276,14 @@ p{
 	margin: 1.5%;
 	width: 97%;
 	height: 145px;
-	border-radius: 22px 22px 0 0;
+	border-radius: 24px 24px 0 0;
 
 }#most-popular .unit img{
 	margin: 1%;
 	float: left;
 	width: 35%;
 	height: 167px;
-	border-radius: 25px 0 0 25px;
+	border-radius: 24px 0 0 24px;
 
 }
 #hosting .description{
@@ -400,11 +401,35 @@ footer ul{
 	padding-left: 0;
 }
 footer li{
+	cursor: pointer;
 	font-family: Raleway-Regular;
 	margin-bottom: 12px;
 	font-size: 14px;
 }
-@media all and (max-width: 1200px){
+@media all and (max-width: 1126px){
+	#hosting .unit {
+	    width: 46%;
+	}
+	#hosting .unit img {
+	    height: 95px;
+	}
+
+}
+@media all and (max-width: 1170px){
+	#activities div.unit:nth-child(4) h2 {
+	    padding: 12px 20px 2px 20px;
+	    height: 50px;
+	    bottom: 71px;
+	}
+}
+@media all and (max-width: 1075px){
+	#activities div.unit:nth-child(5) h2 {
+	    padding: 12px 20px 2px 20px;
+	    height: 50px;
+	    bottom: 71px;
+	}
+}
+@media all and (max-width: 1024px){
 	#most-popular {
     	order: 1;
 	}
@@ -417,6 +442,11 @@ footer li{
 	#all_categories {
 	    display: flex;
 	    flex-direction: column;
+	}
+	#activities div.unit:nth-child(5) h2, #activities div.unit:nth-child(4) h2 {
+	    padding: 18px 20px 2px 20px;
+	    height: 35px;
+	    bottom: 63px;
 	}
 }
 @media all and (min-width: 621px){
@@ -446,7 +476,7 @@ footer li{
 	}
 }
 
-@media all and (max-width: 1200px) and (min-width: 621px){
+@media all and (max-width: 1024px) and (min-width: 621px){
 
 	#activities div.unit:nth-child(1){
 		height: 48%;
@@ -475,8 +505,9 @@ footer li{
 	#activities div#list_activities {
 		height: 680px;
 	}
+
 }
-@media all and (max-width: 1200px) and (min-width: 426px){
+@media all and (max-width: 1024px) and (min-width: 426px){
 	header img{
 		width: 	160%;
 	}
@@ -552,9 +583,6 @@ footer li{
 	footer li{
 		margin-bottom: 8px;
 	}
-}
-@media all and (max-width: 778px) {
-
 	header{
 		margin: 0;
 		width: auto;
@@ -566,6 +594,7 @@ footer li{
 	nav{
 		width: 100%;
 		margin-top: 35px;
+		height: auto;
 	}
 	nav ul li:nth-child(3){
 		position: absolute;
@@ -591,7 +620,7 @@ footer li{
 	nav ul li:nth-child(1),nav ul li:nth-child(2){
 		width: 50%;
 		margin: 0;
-		padding: 0;
+		padding: 18px 0;
 		text-align: center;
 		border-bottom: 4px solid #F2F2F2;
 		border-top: 0;
@@ -599,6 +628,9 @@ footer li{
 	nav ul li:nth-child(1):hover,nav ul li:nth-child(2):hover{
 		border-bottom: 4px solid #0065FC;
 
+	}
+	#search_service h1{
+		margin-top: 90px;
 	}
 }
 
