@@ -1,10 +1,12 @@
 @font-face{
   font-family: Raleway-Regular;
   src: url(../fonts/Raleway-Regular.ttf);
-}@font-face{
+}
+@font-face{
   font-family: Raleway-Semibold;
   src: url(../fonts/Raleway-SemiBold.ttf);
-}@font-face{
+}
+@font-face{
   font-family: Raleway-Bold;
   src: url(../fonts/Raleway-Bold.ttf);
 }
