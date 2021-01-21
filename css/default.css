@@ -1,10 +1,12 @@
 @font-face{
   font-family: Raleway-Regular;
   src: url(../fonts/Raleway-Regular.ttf);
-}@font-face{
+}
+@font-face{
   font-family: Raleway-Semibold;
   src: url(../fonts/Raleway-SemiBold.ttf);
-}@font-face{
+}
+@font-face{
   font-family: Raleway-Bold;
   src: url(../fonts/Raleway-Bold.ttf);
 }
@@ -249,6 +251,9 @@ p{
 	display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+}
+#most-popular .list{
+	width: 100%;
 }
 #hosting .unit, #most-popular .unit{
 	min-width: 210px;
